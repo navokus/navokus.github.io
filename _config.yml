@@ -7,7 +7,7 @@ baseurl: "/"
 
 # Name of website
 title: Awareness Log
-version: 1
+version: 1.0.0
 
 # Short description of your site
 description: My awareness diary
@@ -51,7 +51,7 @@ author:
 
 # Select which share links to show in posts
 share-links-active:
-  twitter: true
+  twitter: false
   facebook: false
   google: false
   linkedin: false
