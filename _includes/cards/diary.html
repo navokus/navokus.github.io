@@ -1,3 +1,4 @@
+{% capture datafile %}{{ include.file }}{% endcapture %}
 {% assign datasets = site.data[datafile] | split: "|" %}
 <div class="col-lg-{% if include.width %}{{ include.width }}{% else %}6{% endif %}">
   <div class="card shadow mb-4">
