@@ -2,18 +2,18 @@
 
 # url is the full website URL
 # baseurl is the website's URL without the hostname
-url: "https://vsoch.github.io"
-baseurl: "/sb-admin-jekyll"
+url: "https://navokus.github.io"
+baseurl: "/aware"
 
 # Name of website
-title: SBA Jekyll
+title: Awareness Log
 version: 1
 
 # Short description of your site
-description: Startbootstrap Theme (Sb admin) for Jekyll
-github_user: vsoch
-github_repo: sb-admin-jekyll
-repo: https://www.github.com/vsoch/sb-admin-jekyll
+description: My awareness diary
+github_user: navokus
+github_repo: navokus
+repo: navokus
 
 # --- Navigation bar options --- #
 
@@ -34,27 +34,10 @@ collections:
 
 defaults:
   - scope:
-      path: "_docs"
-      type: "docs"
+      path: "_diary"
+      type: "diary"
     values:
       layout: page
-  - scope:
-      path: "_projects"
-      type: "projects"
-    values:
-      layout: project
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  -
-    scope:
-      path: "_posts"
-      type: "posts"
-    values:
-      layout: "post"
 
 
 # --- Footer options --- #
@@ -62,9 +45,9 @@ defaults:
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: "vsoch"
-  github: vsoch
-  twitter: vsoch
+  name: "navokus"
+  github: navokus
+  twitter: navokus
 
 # Select which share links to show in posts
 share-links-active:
