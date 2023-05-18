@@ -1,6 +1,3 @@
-- title: Dashboard
-  icon: fa-tachometer-alt
-  url: /
 - title: Logs
-  icon: fa-chart-area
-  url: diary/log/
+  icon: fa-tachometer-alt
+  url: /docs/awareness

@@ -6974,6 +6974,11 @@ button.bg-danger:focus {
   background-color: #d52a1a !important;
 }
 
+.bg-green-300 {
+  background-color: $green-300 !important;
+}
+
+
 .bg-light {
   background-color: #f8f9fc !important;
 }
@@ -6992,6 +6997,46 @@ a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
   background-color: #42444e !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+.bg-m1 {
+  background-color: #A93226 !important;
+}
+
+.bg-m2 {
+  background-color: #884EA0 !important;
+}
+
+.bg-m3 {
+  background-color: #2471A3 !important;
+}
+
+.bg-m4 {
+  background-color: #17A589 !important;
+}
+
+.bg-m5 {
+  background-color: #229954 !important;
+}
+
+.bg-m6 {
+  background-color: #28B463 !important;
+}
+
+.bg-m7 {
+  background-color: #D4AC0D !important;
+}
+
+.bg-m8 {
+  background-color: #CA6F1E !important;
+}
+
+.bg-m9 {
+  background-color: #BA4A00 !important;
 }
 
 .bg-white {
