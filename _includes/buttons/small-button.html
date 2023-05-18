@@ -1,6 +1,7 @@
 {% assign data = include.title | split: "|" %}
 {% for entry in data  %}
-<a href="{{ include.url }}" class="btn btn-{{ include.style }} btn-sm">
+{% assign i = 0 %}
+<a href="{{ include.url }}" class="btn btn-info btn-sm">
   <span class="text">{{ entry }}</span>
 </a>
 {% endfor %}

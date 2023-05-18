@@ -11,9 +11,9 @@ version: 1.0.0
 
 # Short description of your site
 description: My awareness diary
-github_user: navokus
-github_repo: navokus
-repo: navokus
+github_user: 
+github_repo: 
+repo: 
 
 # --- Navigation bar options --- #
 
@@ -46,15 +46,14 @@ defaults:
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: "navokus"
-  github: navokus
-  twitter: navokus
+  github: 
 
 # Select which share links to show in posts
-share-links-active:
-  twitter: false
-  facebook: false
-  google: false
-  linkedin: false
+#share-links-active:
+#  twitter: false
+#  facebook: false
+#  google: false
+#  linkedin: false
 
 # --- Web Statistics Section --- #
 

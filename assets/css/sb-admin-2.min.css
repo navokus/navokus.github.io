@@ -3203,7 +3203,7 @@ fieldset:disabled a.btn {
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.675rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -7004,7 +7004,7 @@ button.bg-dark:focus {
 }
 
 .bg-m1 {
-  background-color: #A93226 !important;
+  background-color: #7FB3D5 !important;
 }
 
 .bg-m2 {
@@ -7016,7 +7016,7 @@ button.bg-dark:focus {
 }
 
 .bg-m4 {
-  background-color: #17A589 !important;
+  background-color: #82E0AA !important;
 }
 
 .bg-m5 {
@@ -7028,7 +7028,7 @@ button.bg-dark:focus {
 }
 
 .bg-m7 {
-  background-color: #D4AC0D !important;
+  background-color: #BDC3C7 !important;
 }
 
 .bg-m8 {
