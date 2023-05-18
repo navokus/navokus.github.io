@@ -34,8 +34,8 @@ collections:
 
 defaults:
   - scope:
-      path: "_diary"
-      type: "diary"
+      path: "_docs"
+      type: "awareness"
     values:
       layout: page
 
