@@ -1,3 +1,10 @@
-- title: Logs
-  icon: fa-tachometer-alt
+- title: Daily
+  icon: fa-chart-area
   url: /docs/awareness
+- title: Weekly
+  icon: fa-table
+  url: /docs/awareness
+- title: Monthly
+  icon: fa-star
+  url: /docs/awareness
+
