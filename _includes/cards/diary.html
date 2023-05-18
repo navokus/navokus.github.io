@@ -32,7 +32,7 @@
       <!-- Start -->
       <h4 class="small font-weight-bold">Ăn chánh niệm 10ph<span class="float-right"></span></h4>
       <div class="progress mb-4">
-        <div class="progress-bar bg-primary" role="progressbar" style="width: {{ entry.eat  }}%" aria-valuenow="{{ entry.eat  }}" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar bg-m6" role="progressbar" style="width: {{ entry.eat  }}%" aria-valuenow="{{ entry.eat  }}" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
       <!-- End -->
       <!-- Start -->
@@ -49,14 +49,14 @@
       <!-- End -->
       <!-- Start -->
       <h4 class="small font-weight-bold">Tâm hành<span class="float-right"></span></h4>
-      <div class="progress mb-4">
-        <div class="progress-bar bg-orange" role="progressbar" style="width: {{ entry.mind  }}%" aria-valuenow="{{ entry.mind  }}" aria-valuemin="0" aria-valuemax="100"></div>
+      <div class="mb-4">
+        {% include buttons/small-button.html style="primary" title=entry.mind %}
       </div>
       <!-- End -->
       <!-- Start -->
       <h4 class="small font-weight-bold">Tiếp xúc trời xanh cây cối sự sống hiện tại<span class="float-right"></span></h4>
       <div class="progress mb-4">
-        <div class="progress-bar bg-info" role="progressbar" style="width: {{ entry.now  }}%" aria-valuenow="{{ entry.now  }}" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar bg-m7" role="progressbar" style="width: {{ entry.now  }}%" aria-valuenow="{{ entry.now  }}" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
       <!-- End -->
     </div>
