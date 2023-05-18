@@ -1,5 +1,7 @@
 {% capture datafile %}{{ include.file }}{% endcapture %}
-{% assign datasets = site.data[datafile] | split: "|" %}
+{% for entry in site.data[datafile] %}
+
+{% assign datasets = entry | split: "|" %}
 <div class="col-lg-{% if include.width %}{{ include.width }}{% else %}6{% endif %}">
   <div class="card shadow mb-4">
     <div class="card-header py-3">
@@ -13,3 +15,4 @@
     </div>
   </div>
 </div>
+{% endfor %}
