@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Awareness Diary
+title: Awareness Weekly
 ---
 
 <h1 class="h3 mb-2 text-gray-800">Lớp mầm non chánh niệm</h1>
@@ -10,5 +10,5 @@ title: Awareness Diary
 <p class="mb-4">Hôm nay mình đã <b><i>về nhà</i></b> chưa?</p>
 
 <div class="row">
-{% include cards/diary.html title="Diary" file="diary" width=12 %}
+{% include cards/weekly.html title="2023-05-17" file="diary" width=12 %}
 </div>

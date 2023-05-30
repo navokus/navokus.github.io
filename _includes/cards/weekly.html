@@ -1,0 +1,24 @@
+{% for entry in site.data.diary reversed %}
+ 
+{% assign c = forloop.index0 | modulo:7  %}
+
+{% assign total_pe = total_pe | plus: entry.pe %}
+
+{% if  c == 0 %}
+  {% assign total_pe = entry.pe %} 
+  {% assign enddate = entry.date %}
+  
+{% endif %}
+
+{% if  c == 6 %}
+  {% assign startdate = entry.date }}
+  {% assign wentry = {date : startdate} %}
+  {% assign wentry.pe = 19 %} 
+  {{ wentry }}
+  {% include cards/display.html title="2023-05-17" entry=wentry width=12 %}
+ 
+  {% assign total_pe = 0 %}
+
+{% endif %}
+
+{% endfor %}
