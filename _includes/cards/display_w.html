@@ -1,0 +1,80 @@
+{% assign date = include.date %}
+{% assign pe = include.pe %}
+{% assign tooth = include.tooth %}
+{% assign walk = include.walk %}
+{% assign wc = include.wc %}
+{% assign eat = include.eat %}
+{% assign breath = include.breath %}
+{% assign speech = include.speech %}
+{% assign mind = include.mind %}
+{% assign now = include.now %}
+
+
+<div class="col-lg-{% if include.width %}{{ include.width }}{% else %}6{% endif %}">
+  <div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <h6 class="m-0 font-weight-bold text-primary">{{ date }}</h6>
+    </div>
+    <div class="card-body">
+      <!-- Start -->
+      <h4 class="small font-weight-bold">Tập thể dục<span class="float-right"></span></h4>
+      <div class="progress mb-4">
+        <div class="progress-bar bg-primary" role="progressbar" style="width: {{ pe  }}%" aria-valuenow="{{ wentry.pe  }}" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <!-- End -->
+      <!-- Start "Date", "Tập thể dục", "", "", "", "", "", "", "Tâm hành", ""-->
+      <h4 class="small font-weight-bold">Đánh răng<span class="float-right"></span></h4>
+      <div class="progress mb-4">
+        <div class="progress-bar bg-success" role="progressbar" style="width: {{ tooth  }}%" aria-valuenow="{{ wentry.tooth  }}" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <!-- End -->
+       <!-- Start -->
+      <h4 class="small font-weight-bold">Lên xuống cầu thang/thang máy<span class="float-right"></span></h4>
+      <div class="progress mb-4">
+        <div class="progress-bar bg-info" role="progressbar" style="width: {{ walk }}%" aria-valuenow="{{ wentry.walk }}" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <!-- End -->
+      <!-- Start -->
+      <h4 class="small font-weight-bold">Đi vệ sinh<span class="float-right"></span></h4>
+      <div class="progress mb-4">
+        <div class="progress-bar bg-warning" role="progressbar" style="width: {{ wc  }}%" aria-valuenow="{{ wentry.wc  }}" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <!-- End -->
+      <!-- Start -->
+      <h4 class="small font-weight-bold">Ăn chánh niệm 10ph<span class="float-right"></span></h4>
+      <div class="progress mb-4">
+        <div class="progress-bar bg-danger" role="progressbar" style="width: {{ eat  }}%" aria-valuenow="{{ wentry.eat  }}" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <!-- End -->
+      <!-- Start -->
+      <h4 class="small font-weight-bold">Hơi thở chánh niệm<span class="float-right"></span></h4>
+      <div class="progress mb-4">
+        <div class="progress-bar bg-secondary" role="progressbar" style="width: {{ breath  }}%" aria-valuenow="{{ wentry.breath  }}" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <!-- End -->
+      <!-- Start -->
+      <h4 class="small font-weight-bold">Ái ngữ<span class="float-right"></span></h4>
+      <div class="progress mb-4">
+        <div class="progress-bar bg-m2" role="progressbar" style="width: {{ speech  }}%" aria-valuenow="{{ wentry.speech  }}" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <!-- End -->
+      <!-- Start -->
+      <h4 class="small font-weight-bold">Tâm hành<span class="float-right"></span></h4>
+      <div class="mb-4">
+        {% for m in mind | strip | split "|"  %}
+        {% if m.size > 1 %}
+        {% include buttons/small-button.html style="primary" title=m %}
+        {% endif %}
+        {% endfor %}
+        
+      </div>
+      <!-- End -->
+      <!-- Start -->
+      <h4 class="small font-weight-bold">Tiếp xúc trời xanh cây cối sự sống hiện tại<span class="float-right"></span></h4>
+      <div class="progress mb-4">
+        <div class="progress-bar bg-m4" role="progressbar" style="width: {{ now  }}%" aria-valuenow="{{ wentry.now  }}" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <!-- End -->
+    </div>
+  </div>
+</div>

@@ -1,6 +1,6 @@
 {% for entry in site.data.diary reversed %}
  
-{% assign c = forloop.index0 | modulo:7  %}
+{% assign c = forloop.index0 | modulo:30  %}
 
 {% assign total_pe = total_pe | plus: entry.pe %}
 {% assign total_tooth = total_tooth | plus: entry.tooth %}
@@ -30,17 +30,17 @@
   
 {% endif %}
 
-{% if  c == 6 %}
+{% if  c == 29 %}
   {% assign startdate = entry.date | append: " - "  | append: enddate %}
 
-  {% assign total_pe = total_pe | divided_by: 7 %} 
-  {% assign total_tooth = total_tooth | divided_by: 7 %} 
-  {% assign total_walk = total_walk | divided_by: 7 %} 
-  {% assign total_wc = total_wc | divided_by: 7 %}
-  {% assign total_eat = total_eat | divided_by: 7 %}
-  {% assign total_breath = total_breath | divided_by: 7 %}
-  {% assign total_speech = total_speech | divided_by: 7 %}
-  {% assign total_now = total_now | divided_by: 7 %}
+  {% assign total_pe = total_pe | divided_by: 30 %} 
+  {% assign total_tooth = total_tooth | divided_by: 30 %} 
+  {% assign total_walk = total_walk | divided_by: 30 %} 
+  {% assign total_wc = total_wc | divided_by: 30 %}
+  {% assign total_eat = total_eat | divided_by: 30 %}
+  {% assign total_breath = total_breath | divided_by: 30 %}
+  {% assign total_speech = total_speech | divided_by: 30 %}
+  {% assign total_now = total_now | divided_by: 30 %}
 
 
   {% include cards/display_w.html date=startdate pe=total_pe tooth=total_tooth walk=total_walk wc=total_wc eat=total_eat breath=total_breath speech=total_speech mind=total_mind now=total_now width=12 %}
