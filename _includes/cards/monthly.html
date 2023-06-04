@@ -30,7 +30,7 @@
   
 {% endif %}
 
-{% if  c == 29 %}
+{% if  c == 29 or forloop.last %}
   {% assign startdate = entry.date | append: " - "  | append: enddate %}
 
   {% assign total_pe = total_pe | divided_by: 30 %} 
